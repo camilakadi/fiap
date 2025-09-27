@@ -1,0 +1,36 @@
+.banner {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 5rem;
+  color: var(--white-color);
+}
+
+.imageBanner {
+  margin: 0 auto;
+  display: block;
+}
+
+.carouselTextoCima {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.813rem;
+  margin-bottom: 2.813rem;
+}
+
+.carouselTextoBaixo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.813rem;
+}
