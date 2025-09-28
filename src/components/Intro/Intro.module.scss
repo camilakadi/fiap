@@ -1,6 +1,23 @@
-.banner {
-  margin: 0 auto;
-  width: 100%;
+.introBanner {
+  height: 804px;
+  position: relative;
+  margin: auto;
+  width: 1495px;
+}
+
+.introBannerContent {
+  overflow: hidden;
+}
+
+.introBannerImageContainer {
+  height: 804px;
+  position: relative;
+}
+
+.introBannerImage {
+  height: 100%;
+  width: 1495px;
+  position: absolute;
 }
 
 .marquees {
@@ -16,39 +33,52 @@
   display: flex;
   width: 200%;
   overflow: hidden;
-  position: relative;
 }
 
 .marqueeContent {
   font-size: 5rem;
   line-height: 5rem;
   font-weight: 400;
-  gap: 3rem;
-  flex-shrink: 0;
   white-space: nowrap;
   display: inline-block;
-  position: relative;
   color: var(--white-color);
 }
 
-.imageBanner {
-  margin: 0 auto;
+.marquees02 {
+  margin-top: -110px;
+}
+
+.marqueeContainer02 {
+  padding: 23px 0;
   display: block;
+  position: relative;
 }
 
-.carouselTextoCima {
-  display: flex;
-  flex-direction: row;
+.marqueeTrack02 {
+  gap: 45px;
   align-items: center;
-  justify-content: center;
-  gap: 2.813rem;
-  margin-bottom: 2.813rem;
+  display: flex;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  margin-left: -25rem;
 }
 
-.carouselTextoBaixo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 2.813rem;
+.marqueeContent02 {
+  font-weight: 400;
+  font-family: var(--montserrat), sans-serif;
+  font-size: 144px;
+  line-height: 144px;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #545555;
+}
+
+.circle {
+  min-width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #545555;
+  background-color: transparent;
+  display: block;
 }
