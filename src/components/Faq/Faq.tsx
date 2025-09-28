@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import styles from "./Faq.module.scss";
 
 const faqData = [
@@ -35,19 +36,29 @@ const faqData = [
 ];
 
 export default function Faq() {
+  const [activeItem, setActiveItem] = useState<number | null>(null);
+
+  const handleItemClick = (index: number) => {
+    setActiveItem(activeItem === index ? null : index);
+  };
+
   return (
     <section className={styles.faq}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <div className={styles.titleSection}>
-            <h1 className={styles.title}>FAQ</h1>
-            <h2 className={styles.subtitle}>Dúvidas Frequentes</h2>
-          </div>
+          <h1 className={styles.title}>FAQ</h1>
+          <h2 className={styles.subtitle}>Dúvidas Frequentes</h2>
         </div>
 
         <div className={styles.faqGrid}>
           {faqData.map((item, index) => (
-            <div key={index} className={styles.faqItem}>
+            <div
+              key={index}
+              className={`${styles.faqItem} ${
+                activeItem === index ? styles.active : ""
+              }`}
+              onClick={() => handleItemClick(index)}
+            >
               <div className={styles.risk}></div>
               <div className={styles.question}>{item.question}</div>
               <div className={styles.answer}>{item.answer}</div>

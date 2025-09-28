@@ -14,31 +14,51 @@
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   margin-bottom: 7rem;
-}
 
-.titleSection {
-  flex: 1;
+  @media (max-width: 75rem) {
+    margin-bottom: 4.375rem;
+  }
+
+  @media (max-width: 48rem) {
+    margin-bottom: 2.625rem;
+  }
 }
 
 .title {
   font-size: 5.75rem;
-  line-height: 1;
+  line-height: 5.75rem;
   font-weight: 500;
   color: var(--white-color);
   margin-bottom: 1.25rem;
+
+  @media (max-width: 75rem) {
+    font-size: 4.75rem;
+    line-height: 4.75rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 48rem) {
+    font-size: 3.25rem;
+    line-height: 3.75rem;
+    margin-bottom: 0.375rem;
+  }
 }
 
 .subtitle {
   font-size: 1.375rem;
   font-weight: 500;
   line-height: 1.2;
-  margin: 0;
   color: var(--pink-color);
   opacity: 0.8;
+
+  @media (max-width: 75rem) {
+    font-size: 1.25rem;
+  }
+
+  @media (max-width: 48rem) {
+    font-size: 1.125rem;
+  }
 }
 
 .faqGrid {
@@ -46,14 +66,14 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem 5.375rem;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 75rem) {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem 3rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 48rem) {
     grid-template-columns: none;
-    gap: 3rem 3rem;
+    gap: 1.875rem;
   }
 }
 
@@ -62,20 +82,43 @@
   transition: all 0.3s ease;
   cursor: default;
 
-  &:hover {
-    border-color: var(--pink-color);
+  @media (min-width: 75.063rem) {
+    &:hover {
+      border-color: var(--pink-color);
 
-    .answer {
-      opacity: 1;
+      .answer {
+        opacity: 1;
+      }
+
+      .question {
+        color: var(--white-color);
+      }
+
+      .risk {
+        background-color: var(--pink-color);
+        width: 100%;
+      }
     }
+  }
 
-    .question {
-      color: var(--white-color);
-    }
+  @media (max-width: 75rem) {
+    cursor: pointer;
 
-    .risk {
-      background-color: var(--pink-color);
-      width: 100%;
+    &.active {
+      border-color: var(--pink-color);
+
+      .answer {
+        opacity: 1;
+      }
+
+      .question {
+        color: var(--white-color);
+      }
+
+      .risk {
+        background-color: var(--pink-color);
+        width: 100%;
+      }
     }
   }
 }
@@ -86,6 +129,10 @@
   background-color: var(--gray-color);
   margin-bottom: 1.5rem;
   transition: all 0.3s ease;
+
+  @media (max-width: 48rem) {
+    margin-bottom: 1.063rem;
+  }
 }
 
 .question {
@@ -95,6 +142,10 @@
   color: var(--gray-color);
   transition: all 0.3s ease;
   margin-bottom: 0.875rem;
+
+  @media (max-width: 48rem) {
+    margin-bottom: 0.625rem;
+  }
 }
 
 .answer {
@@ -104,4 +155,10 @@
   line-height: 1.188rem;
   opacity: 0;
   transition: all 0.3s ease;
+  font-family: var(--roboto), sans-serif;
+
+  @media (max-width: 48rem) {
+    font-size: 0.938rem;
+    line-height: 1.25rem;
+  }
 }
