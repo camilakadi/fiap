@@ -1,7 +1,7 @@
 "use client";
 
 import { gsap } from "gsap";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import styles from "./Courses.module.scss";
 
 const coursesData = {
@@ -86,99 +86,50 @@ export default function Courses() {
 
     setIsAnimating(true);
 
-    // Animação de saída em cascata começando pelo título
     const tl = gsap.timeline({
       onComplete: () => {
         setActiveCategory(newCategory);
-        // Animação de entrada começando pelo título
+
         const enterTl = gsap.timeline({
           onComplete: () => setIsAnimating(false),
         });
 
-        // Título entra primeiro
-        enterTl.fromTo(
-          categoryTitleRef.current,
-          {
-            opacity: 0,
-          },
+        gsap.to(
+          [categoryTitleRef.current, courseItemsRef.current.filter(Boolean)],
           {
             opacity: 1,
-            duration: 0.5,
-            ease: "power2.out",
+            duration: 0,
+            ease: "none",
           }
         );
 
-        // Depois os itens de curso em cascata
         enterTl.fromTo(
-          courseItemsRef.current.filter(Boolean),
+          categoryContentRef.current,
           {
             opacity: 0,
           },
           {
             opacity: 1,
-            duration: 0.5,
-            stagger: 0.2,
-            ease: "power2.out",
-          },
-          "-=0.4" // Começa um pouco antes do título terminar
+            duration: 1,
+            ease: "expo",
+          }
         );
+
+        setIsAnimating(false);
       },
     });
 
-    // Primeiro o título sai
-    tl.to(categoryTitleRef.current, {
-      opacity: 0,
-      duration: 0.6,
-      ease: "power2.in",
-    });
-
-    // Depois os itens de curso em cascata (de cima para baixo) - apenas fade
     tl.to(
-      courseItemsRef.current.filter(Boolean),
+      [categoryTitleRef.current, ...courseItemsRef.current.filter(Boolean)],
       {
         opacity: 0,
-        duration: 0.5,
-        stagger: 0.15,
+        duration: 0.7,
+        stagger: 0.1,
         ease: "power2.in",
       },
       "-=0.2"
-    ); // Começa um pouco antes do título terminar
+    );
   };
-
-  // Inicializar animação de entrada na primeira renderização
-  useEffect(() => {
-    if (courseItemsRef.current.length > 0 && categoryTitleRef.current) {
-      const tl = gsap.timeline();
-
-      // Título entra primeiro
-      tl.fromTo(
-        categoryTitleRef.current,
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-          ease: "power2.out",
-        }
-      );
-
-      // Depois os itens de curso em cascata
-      tl.fromTo(
-        courseItemsRef.current.filter(Boolean),
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-          stagger: 0.2,
-          ease: "power2.out",
-        },
-        "-=0.4"
-      );
-    }
-  }, [activeCategory]);
 
   return (
     <section className={styles.courses}>
