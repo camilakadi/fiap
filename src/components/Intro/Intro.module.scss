@@ -3,13 +3,31 @@
   width: 100%;
 }
 
-.introText {
+.marquees {
+  margin-bottom: 3.313rem;
+}
+
+.marqueeContainer {
+  border-bottom: 0.125rem solid var(--white-color);
+  padding: 1.8rem 0;
+}
+
+.marqueeTrack {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  width: 200%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marqueeContent {
   font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 400;
+  gap: 3rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
   color: var(--white-color);
 }
 
