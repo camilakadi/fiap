@@ -5,6 +5,9 @@
   --white-color: #ffffff;
   --pink-color: #f80d5a;
   --gray-color: #8a959b;
+  --black-color: #000000;
+  --dark-gray-color: #202121;
+  --pink-progress-color: #ed145b;
 }
 
 html,
@@ -24,6 +27,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
+  padding-top: 5rem;
 }
 
 * {
