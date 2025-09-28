@@ -45,11 +45,20 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem 5.375rem;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 3rem;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: none;
+    gap: 3rem 3rem;
+  }
 }
 
 .faqItem {
   position: relative;
-  height: 9.375rem;
   transition: all 0.3s ease;
   cursor: default;
 
