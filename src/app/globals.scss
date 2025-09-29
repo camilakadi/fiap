@@ -19,6 +19,7 @@ body {
 
 html {
   font-size: 100%;
+  overflow-y: overlay;
 }
 
 body {
@@ -40,4 +41,27 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--gray-color) var(--dark-gray-color);
+}
+
+*::-webkit-scrollbar {
+  &-track {
+    background: var(--dark-gray-color);
+  }
+
+  &-thumb {
+    background: var(--gray-color);
+
+    &:hover {
+      background: var(--gray-color);
+    }
+  }
+
+  &-button {
+    color: var(--dark-gray-color);
+  }
 }
