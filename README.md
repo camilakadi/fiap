@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## FIAP – Página Next.js
 
-## Getting Started
+Este repositório contém uma landing page construída com Next.js (App Router) e estilizada com SCSS. Abaixo estão todas as orientações necessárias para instalar, executar e conhecer as dependências utilizadas.
 
-First, run the development server:
+## Pré-requisitos
+
+- Node.js 18.18+ ou 20+ (LTS recomendado)
+- Yarn 4+ (recomendado por este projeto, pois há `yarn.lock`)
+  - Alternativas: npm ou pnpm também funcionam
+
+Verifique suas versões:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+node -v
+yarn -v
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instalação
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Clone o repositório e instale as dependências:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git clone https://github.com/camilakadi/fiap.git
+cd fiap
+yarn install
+# ou
+npm install
+# ou
+pnpm install
+```
 
-## Learn More
+## Executando em desenvolvimento
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+yarn dev
+# ou: npm run dev | pnpm dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Acesse `http://localhost:3000` no navegador.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Build de produção
 
-## Deploy on Vercel
+```bash
+yarn build
+yarn start
+# ou: npm run build && npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Lint
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+yarn lint
+# ou: npm run lint
+```
+
+## Estrutura do projeto (resumo)
+
+- `src/app/`: rotas, layout e páginas do App Router
+- `src/components/`: componentes (About, Courses, Faq, Header, Intro, Water)
+- `public/`: imagens e SVGs
+- `styles`/`*.scss`: estilos com Sass/SCSS
+
+## Dependências usadas
+
+Produção:
+
+- next `15.5.4`
+- react `19.1.0`
+- react-dom `19.1.0`
+- sass `^1.93.2` (compilação SCSS)
+- gsap `^3.13.0` (animações)
+
+Desenvolvimento:
+
+- typescript `^5`
+- eslint `^9` e `eslint-config-next` `15.5.4`
+- @types/node `^20`
+- @types/react `^19`
+- @types/react-dom `^19`
+
+## Dicas e problemas comuns
+
+- Caso enfrente erro de versão do Node, atualize para a LTS mais recente.
+- Em Windows, execute o terminal como administrador apenas se necessário para instalar dependências globais.
+- Se usar npm/pnpm em vez de Yarn, mantenha consistência (evite alternar para não gerar conflitos de lockfile).
