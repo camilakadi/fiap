@@ -1,0 +1,104 @@
+.courses {
+  padding: 5rem 1.625rem;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 3.625rem;
+}
+
+.title {
+  font-size: 3.875rem;
+  line-height: 3.75rem;
+  font-weight: 500;
+  color: var(--white-color);
+  margin-bottom: 0.938rem;
+}
+
+.subtitle {
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 1.688rem;
+  margin: 0;
+  color: var(--pink-color);
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 2.813rem;
+}
+
+.accordionIcon {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  border: 0.063rem solid var(--pink-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.313rem;
+  line-height: 1.688rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.063rem var(--pink-color);
+}
+
+.accordionItem {
+  overflow: hidden;
+}
+
+.accordionHeader {
+  width: 100%;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categoryLabel {
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.accordionIcon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  min-width: 1rem;
+  text-align: center;
+}
+
+.coursesList {
+  padding: 1rem 0 0 0;
+}
+
+.courseItem {
+  padding: 1.125rem 0;
+  border-bottom: 0.063rem solid #8a959b;
+  display: flex;
+  flex-direction: column;
+  gap: 0.188rem;
+}
+
+.courseMode {
+  font-size: 0.625rem;
+  line-height: 0.625rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #8a959b;
+}
+
+.courseTitle {
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  font-weight: 300;
+  color: var(--white-color);
+  font-family: var(--roboto);
+}

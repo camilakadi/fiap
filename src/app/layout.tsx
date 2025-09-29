@@ -15,7 +15,7 @@ const montserratAlternates = Montserrat_Alternates({
 
 const roboto = Roboto({
   variable: "--roboto",
-  weight: ["400", "900"],
+  weight: ["300", "400", "900"],
   subsets: ["latin"],
 });
 
