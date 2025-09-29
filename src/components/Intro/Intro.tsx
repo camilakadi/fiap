@@ -173,6 +173,14 @@ export default function Intro() {
             <div className={styles.circle}></div>
 
             <div className={styles.marqueeContent02}>Conhecimento</div>
+
+            <div className={styles.circle}></div>
+
+            <div className={styles.marqueeContent02}>Skills</div>
+
+            <div className={styles.circle}></div>
+
+            <div className={styles.marqueeContent02}>Conhecimento</div>
           </div>
         </div>
 
