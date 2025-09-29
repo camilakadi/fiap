@@ -1,18 +1,18 @@
 .introBanner {
-  height: 804px;
+  height: 50.25rem;
   position: relative;
   margin: auto;
   width: 100%;
-  max-width: 1495px;
+  max-width: 93.4375rem;
 
   @media (max-width: 1600px) {
     height: 70vh;
-    min-height: 500px;
+    min-height: 31.25rem;
   }
 
   @media (max-width: 1200px) {
     height: 60vh;
-    min-height: 400px;
+    min-height: 25rem;
   }
 
   @media (max-width: 768px) {
@@ -25,17 +25,17 @@
 }
 
 .introBannerImageContainer {
-  height: 804px;
+  height: 50.25rem;
   position: relative;
 
   @media (max-width: 1600px) {
     height: 70vh;
-    min-height: 500px;
+    min-height: 31.25rem;
   }
 
   @media (max-width: 1200px) {
     height: 60vh;
-    min-height: 400px;
+    min-height: 25rem;
   }
 
   @media (max-width: 768px) {
@@ -46,7 +46,7 @@
 .introBannerImage {
   height: 100%;
   width: 100%;
-  max-width: 1495px;
+  max-width: 93.4375rem;
   position: absolute;
   object-fit: cover;
   left: 50%;
@@ -82,7 +82,7 @@
   }
 
   @media (max-width: 768px) {
-    padding: 7px 0;
+    padding: 0.4375rem 0;
   }
 }
 
@@ -117,10 +117,10 @@
 }
 
 .marquees02 {
-  margin-top: -110px;
+  margin-top: -6.875rem;
 
   @media (max-width: 1330px) {
-    margin-top: -60px;
+    margin-top: -3.75rem;
   }
 
   @media (max-width: 768px) {
@@ -129,17 +129,17 @@
 }
 
 .marqueeContainer02 {
-  padding: 23px 0;
+  padding: 1.4375rem 0;
   display: block;
   position: relative;
 
   @media (max-width: 1330px) {
-    padding: 10px 0;
+    padding: 0.625rem 0;
   }
 }
 
 .marqueeTrack02 {
-  gap: 45px;
+  gap: 2.8125rem;
   align-items: center;
   display: flex;
   position: relative;
@@ -151,15 +151,15 @@
 .marqueeContent02 {
   font-weight: 400;
   font-family: var(--montserrat), sans-serif;
-  font-size: 144px;
-  line-height: 144px;
+  font-size: 9rem;
+  line-height: 9rem;
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px #545555;
+  -webkit-text-stroke: 0.125rem #545555;
 
   @media (max-width: 1330px) {
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 5rem;
+    line-height: 5rem;
   }
 }
 
@@ -168,10 +168,10 @@
 }
 
 .circle {
-  min-width: 38px;
-  height: 38px;
+  min-width: 2.375rem;
+  height: 2.375rem;
   border-radius: 50%;
-  border: 2px solid #545555;
+  border: 0.125rem solid #545555;
   background-color: transparent;
   display: block;
 }
