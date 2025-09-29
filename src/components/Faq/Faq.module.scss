@@ -6,6 +6,11 @@
   color: var(--white-color);
   padding: 4rem 3rem;
   background: var(--background);
+
+  @media (max-width: 48rem) {
+    padding: 4rem 1.625rem 12rem 1.625rem;
+    min-height: auto;
+  }
 }
 
 .container {
