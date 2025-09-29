@@ -151,8 +151,10 @@ export default function Water() {
   }, [canvasSize]);
 
   return (
-    <div className={styles.waterContainer}>
-      <canvas ref={canvasRef} className={styles.waterCanvas} />
-    </div>
+    <section className={styles.water}>
+      <div className={styles.waterContainer}>
+        <canvas ref={canvasRef} className={styles.waterCanvas} />
+      </div>
+    </section>
   );
 }

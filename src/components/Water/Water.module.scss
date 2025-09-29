@@ -1,8 +1,15 @@
+.water {
+  @media (max-width: 62.5rem) {
+    display: none;
+    height: 0;
+  }
+}
+
 .waterContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000000;
+  background: var(--background);
   overflow: hidden;
 }
 
