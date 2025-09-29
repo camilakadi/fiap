@@ -1,4 +1,4 @@
-## FIAP – Página Next.js
+## FIAP – Landing Page em Next.js
 
 Este repositório contém uma landing page construída com Next.js (App Router) e estilizada com SCSS. Abaixo estão todas as orientações necessárias para instalar, executar e conhecer as dependências utilizadas.
 
