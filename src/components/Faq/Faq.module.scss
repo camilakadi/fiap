@@ -2,12 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 70vh;
   color: var(--white-color);
   padding: 4rem 3rem;
   background: var(--background);
 
-  @media (max-width: 48rem) {
+  @media (max-width: 62.5rem) {
     padding: 4rem 1.625rem 12rem 1.625rem;
     min-height: auto;
   }
