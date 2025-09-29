@@ -2,7 +2,22 @@
   height: 804px;
   position: relative;
   margin: auto;
-  width: 1495px;
+  width: 100%;
+  max-width: 1495px;
+
+  @media (max-width: 1600px) {
+    height: 70vh;
+    min-height: 500px;
+  }
+
+  @media (max-width: 1200px) {
+    height: 60vh;
+    min-height: 400px;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .introBannerContent {
@@ -12,21 +27,63 @@
 .introBannerImageContainer {
   height: 804px;
   position: relative;
+
+  @media (max-width: 1600px) {
+    height: 70vh;
+    min-height: 500px;
+  }
+
+  @media (max-width: 1200px) {
+    height: 60vh;
+    min-height: 400px;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .introBannerImage {
   height: 100%;
-  width: 1495px;
+  width: 100%;
+  max-width: 1495px;
   position: absolute;
+  object-fit: cover;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .marquees {
   margin-bottom: 3.313rem;
+
+  @media (max-width: 1330px) {
+    margin-bottom: 2.5rem;
+  }
+
+  @media (max-width: 1024px) {
+    margin-bottom: 2rem;
+  }
 }
 
 .marqueeContainer {
   border-bottom: 0.125rem solid var(--white-color);
   padding: 1.8rem 0;
+
+  @media (max-width: 1330px) {
+    padding: 1.2rem 0;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 1rem 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 7px 0;
+  }
 }
 
 .marqueeTrack {
@@ -42,16 +99,43 @@
   white-space: nowrap;
   display: inline-block;
   color: var(--white-color);
+
+  @media (max-width: 1330px) {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 2.188rem;
+    line-height: 1.688rem;
+  }
 }
 
 .marquees02 {
   margin-top: -110px;
+
+  @media (max-width: 1330px) {
+    margin-top: -60px;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .marqueeContainer02 {
   padding: 23px 0;
   display: block;
   position: relative;
+
+  @media (max-width: 1330px) {
+    padding: 10px 0;
+  }
 }
 
 .marqueeTrack02 {
@@ -72,6 +156,15 @@
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px #545555;
+
+  @media (max-width: 1330px) {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+
+.marqueeContent02Italic {
+  font-style: italic;
 }
 
 .circle {

@@ -36,9 +36,18 @@ export default function Intro() {
     }
 
     if (introBannerRef.current) {
+      const getResponsiveHeight = () => {
+        const width = window.innerWidth;
+        if (width <= 480) return "40vh";
+        if (width <= 768) return "50vh";
+        if (width <= 1200) return "60vh";
+        if (width <= 1600) return "70vh";
+        return "804px";
+      };
+
       gsap.set(introBannerRef.current, { height: 0 });
       gsap.to(introBannerRef.current, {
-        height: "804px",
+        height: getResponsiveHeight(),
         scrollTrigger: {
           trigger: "#marquee03",
           start: "top bottom",
@@ -47,6 +56,12 @@ export default function Intro() {
         duration: 1,
         ease: "power2.out",
       });
+
+      const handleResize = () => {
+        gsap.set(introBannerRef.current, { height: getResponsiveHeight() });
+      };
+
+      window.addEventListener("resize", handleResize);
     }
 
     if (marquee03Ref.current) {
@@ -167,13 +182,17 @@ export default function Intro() {
             className={styles.marqueeTrack02}
             ref={marquee04Ref}
           >
-            <div className={styles.marqueeContent02}>
+            <div
+              className={`${styles.marqueeContent02} ${styles.marqueeContent02Italic}`}
+            >
               Muito além dos tutoriais
             </div>
 
             <div className={styles.circle}></div>
 
-            <div className={styles.marqueeContent02}>
+            <div
+              className={`${styles.marqueeContent02} ${styles.marqueeContent02Italic}`}
+            >
               Muito além dos tutoriais
             </div>
           </div>
