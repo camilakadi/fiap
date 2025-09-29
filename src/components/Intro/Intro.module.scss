@@ -5,17 +5,17 @@
   width: 100%;
   max-width: 93.4375rem;
 
-  @media (max-width: 1600px) {
+  @media (max-width: 100rem) {
     height: 70vh;
     min-height: 31.25rem;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 75rem) {
     height: 60vh;
     min-height: 25rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 48rem) {
     display: none;
   }
 }
@@ -28,17 +28,17 @@
   height: 50.25rem;
   position: relative;
 
-  @media (max-width: 1600px) {
+  @media (max-width: 100rem) {
     height: 70vh;
     min-height: 31.25rem;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 75rem) {
     height: 60vh;
     min-height: 25rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 48rem) {
     display: none;
   }
 }
@@ -52,7 +52,7 @@
   left: 50%;
   transform: translateX(-50%);
 
-  @media (max-width: 768px) {
+  @media (max-width: 48rem) {
     display: none;
   }
 }
@@ -60,11 +60,11 @@
 .marquees {
   margin-bottom: 3.313rem;
 
-  @media (max-width: 1330px) {
+  @media (max-width: 83.125rem) {
     margin-bottom: 2.5rem;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 64rem) {
     margin-bottom: 2rem;
   }
 }
@@ -73,15 +73,15 @@
   border-bottom: 0.125rem solid var(--white-color);
   padding: 1.8rem 0;
 
-  @media (max-width: 1330px) {
+  @media (max-width: 83.125rem) {
     padding: 1.2rem 0;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 64rem) {
     padding: 1rem 0;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 48rem) {
     padding: 0.4375rem 0;
   }
 }
@@ -100,30 +100,30 @@
   display: inline-block;
   color: var(--white-color);
 
-  @media (max-width: 1330px) {
+  @media (max-width: 83.125rem) {
     font-size: 4rem;
     line-height: 4rem;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 64rem) {
     font-size: 3rem;
     line-height: 3rem;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 40rem) {
     font-size: 2.188rem;
-    line-height: 1.688rem;
+    line-height: 1.668rem;
   }
 }
 
 .marquees02 {
   margin-top: -6.875rem;
 
-  @media (max-width: 1330px) {
+  @media (max-width: 83.125rem) {
     margin-top: -3.75rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 48rem) {
     display: none;
   }
 }
@@ -133,7 +133,7 @@
   display: block;
   position: relative;
 
-  @media (max-width: 1330px) {
+  @media (max-width: 83.125rem) {
     padding: 0.625rem 0;
   }
 }
@@ -157,7 +157,7 @@
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.125rem #545555;
 
-  @media (max-width: 1330px) {
+  @media (max-width: 83.125rem) {
     font-size: 5rem;
     line-height: 5rem;
   }
