@@ -1,0 +1,15 @@
+.waterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  overflow: hidden;
+}
+
+.waterCanvas {
+  display: block;
+
+  image-rendering: optimizeQuality;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}

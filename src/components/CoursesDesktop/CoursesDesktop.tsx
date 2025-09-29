@@ -71,7 +71,7 @@ export default function CoursesDesktop() {
   };
 
   return (
-    <section className={styles.courses}>
+    <section id="courses" className={styles.courses}>
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.titleSection}>
