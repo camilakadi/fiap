@@ -57,6 +57,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &.expanded {
+    .accordionIcon {
+      background-color: var(--pink-color);
+      -webkit-text-fill-color: var(--black-color);
+      -webkit-text-stroke: 0.063rem var(--black-color);
+    }
+  }
 }
 
 .categoryLabel {
